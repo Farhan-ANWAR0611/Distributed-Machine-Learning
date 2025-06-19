@@ -80,3 +80,136 @@ The dataset includes the following features:
 
 ## 📂 File Structure
 
+
+
+
+
+
+                       Machine Learning with Spark ML
+# 🧠 Term Deposit Subscription Prediction using Spark ML
+
+This project uses **Apache Spark MLlib** to build a binary classification model that predicts whether a client will subscribe to a term deposit, based on personal and financial data from the `bank.csv` dataset. It also includes preprocessing, exploratory analysis, model evaluation, and hyperparameter tuning in a distributed environment.
+
+---
+
+## 📁 Dataset Overview
+
+The dataset contains banking information for marketing campaigns. Key features include:
+
+| Feature        | Description |
+|----------------|-------------|
+| `age`          | Age of the client |
+| `job`          | Type of job |
+| `marital`      | Marital status |
+| `education`    | Education level |
+| `default`      | Credit default status |
+| `balance`      | Account balance |
+| `housing`      | Housing loan status |
+| `loan`         | Personal loan status |
+| `contact`      | Contact communication type |
+| `month`        | Last contact month |
+| `duration`     | Last contact duration (in seconds) |
+| `campaign`     | Number of contacts during this campaign |
+| `pdays`        | Days since last contact |
+| `previous`     | Number of previous contacts |
+| `poutcome`     | Outcome of previous campaign |
+| `y`            | Target (Yes/No – subscribed to term deposit) |
+
+---
+
+## 🎯 Project Objective
+
+To build and evaluate a machine learning pipeline in Apache Spark to:
+- Preprocess and transform data
+- Train and validate a **Logistic Regression** model
+- Evaluate model performance using multiple metrics
+- Tune hyperparameters for better accuracy
+- Identify important features influencing client behavior
+
+---
+
+## 🔄 Workflow Summary
+
+### 1️⃣ Data Loading & EDA
+- Loaded `bank.csv` into a Spark DataFrame
+- Displayed schema and inspected raw rows
+
+### 2️⃣ Data Preprocessing
+- Handled missing values (none found)
+- Identified and kept outliers
+- Converted categorical columns to numeric using `StringIndexer`
+
+### 3️⃣ Feature Engineering
+- Combined all features into a single vector using `VectorAssembler`
+
+### 4️⃣ Model Training
+- Used **Logistic Regression** for binary classification
+- Split dataset (80% training / 20% testing)
+
+### 5️⃣ Model Evaluation
+- Accuracy: **89.17%**
+- Precision: **87.07%**
+- Recall: **89.17%**
+- F1 Score: **87.07%**
+
+### 6️⃣ Hyperparameter Tuning
+- Used `ParamGridBuilder` and `CrossValidator`
+- Best model accuracy after tuning: **89.06%**
+
+### 7️⃣ Feature Importance (Top Influencers)
+| Feature              | Effect |
+|----------------------|--------|
+| `poutcome_indexed`   | Strong Positive |
+| `housing_indexed`    | Moderate Positive |
+| `marital_indexed`    | Slight Positive |
+| `loan_indexed`       | Strong Negative |
+| `contact_indexed`    | Mild Negative |
+
+---
+
+## 📊 Key Insights
+
+- Past campaign outcomes (`poutcome`) are the most reliable predictor of subscription.
+- Clients with a housing loan are more likely to subscribe.
+- Personal loans negatively impact likelihood of subscription.
+- Several features like age, education, and balance had little effect in this model.
+
+---
+
+## 🛠 Technologies Used
+
+- Apache Spark 3.x
+- PySpark (Spark MLlib)
+- Google Colab / Local Environment
+- Python 3.11
+- Pandas, Matplotlib (optional for visualization)
+
+---
+
+## 📂 How to Run
+
+1. Open `Google Colab` or your local Jupyter environment.
+2. Upload the `bank.csv` dataset.
+3. Execute the steps in order:
+   - Data loading
+   - Preprocessing
+   - Feature engineering
+   - Model training & evaluation
+   - Hyperparameter tuning
+
+---
+
+## 📌 Author
+
+**Md Farhan Anwar**  
+B.Tech Final Year Project
+
+---
+
+## ✅ Final Verdict
+
+This Spark ML project successfully demonstrates how distributed machine learning can be used in real banking environments to **predict customer behavior**, **optimize marketing efforts**, and **derive strategic insights** from large datasets.
+
+---
+
+
