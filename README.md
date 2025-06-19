@@ -1,3 +1,5 @@
+FILE 1
+
 # Distributed-Machine-Learning
 
 # 💻 Banking Data Analysis with Apache Spark – Data Parallelism Project
@@ -84,8 +86,11 @@ The dataset includes the following features:
 
 
 
+#🚀 2ND FILE: MACHINE LEARNING WITH SPARK ML
+      
 
-                       Machine Learning with Spark ML
+
+                      
 # 🧠 Term Deposit Subscription Prediction using Spark ML
 
 This project uses **Apache Spark MLlib** to build a binary classification model that predicts whether a client will subscribe to a term deposit, based on personal and financial data from the `bank.csv` dataset. It also includes preprocessing, exploratory analysis, model evaluation, and hyperparameter tuning in a distributed environment.
@@ -199,10 +204,7 @@ To build and evaluate a machine learning pipeline in Apache Spark to:
 
 ---
 
-## 📌 Author
 
-**Md Farhan Anwar**  
-B.Tech Final Year Project
 
 ---
 
