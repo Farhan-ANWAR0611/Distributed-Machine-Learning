@@ -215,3 +215,100 @@ This Spark ML project successfully demonstrates how distributed machine learning
 ---
 
 
+FILE 3 SPARK Data Processing
+
+
+# 💳 Spark Data Processing Project – Bank Client Analysis
+
+## 📁 Dataset Used
+- **File:** `bank.csv`
+- **Source:** UCI Bank Marketing Dataset
+- **Records:** Bank client information related to term deposit subscription campaigns.
+
+---
+
+## 🎯 Project Objective
+
+To analyze client data using Apache Spark in order to derive insights about client behavior, marketing effectiveness, and financial patterns. This includes:
+
+- Understanding client demographics.
+- Analyzing subscription rates.
+- Evaluating loan defaults and contact methods.
+- Using Spark SQL for advanced queries.
+- Visualizing key insights using Pandas and Matplotlib.
+
+---
+
+## 🛠️ Technologies Used
+- Python 🐍
+- Apache Spark (PySpark) ⚡
+- Google Colab (Jupyter Environment) 🧪
+- Pandas, Matplotlib 📊
+
+---
+
+## 📌 Key Tasks Performed
+
+### ✅ 1. Data Loading and Basic Inspection
+- Loaded the dataset using PySpark.
+- Displayed schema and first few rows.
+- Summarized numerical columns.
+
+### ✅ 2. Data Filtering and Column Operations
+- Filtered clients with balance > 1000.
+- Added a new column for the **quarter** based on the `month`.
+
+### ✅ 3. GroupBy and Aggregation
+- Calculated **average balance** and **median age** by job type.
+- Counted clients by **marital status** who subscribed.
+
+### ✅ 4. User-Defined Functions (UDFs)
+- Created an **`age_group`** column using a custom UDF:
+  - `<30`, `30-60`, `>60`
+
+### ✅ 5. Advanced Data Transformations
+- Calculated **subscription rate** per education level.
+- Identified top 3 professions with highest **loan default rate**.
+
+### ✅ 6. String Manipulation and Date Functions
+- Created `job_marital` by concatenating columns.
+- Converted `contact` to uppercase.
+
+### ✅ 7. Data Visualization
+- Created bar plots and pie charts using Pandas and Matplotlib.
+- Visualized default rates and contact methods.
+
+### ✅ 8. Complex Queries
+- Analyzed **most contacted month** and **success rates**.
+- Compared average contact durations (`y = yes` vs `no`).
+- Calculated **correlation** between `age` and `balance`.
+
+### ✅ 9. Spark SQL Analysis
+- Registered temporary SQL view.
+- Queried:
+  - **Average balance by age group**
+  - **Top 5 most common job types**
+
+---
+
+## 📊 Sample Insights
+
+- Older clients (`>60`) have the highest average balances.
+- Most common job type: **Management**
+- Best contact success rate: **Cellular**
+- Credit default is extremely rare in this dataset (~0.07%).
+
+---
+
+## 📦 Output Files
+- Google Colab notebook (`.ipynb`)
+- Screenshots of all outputs (if running locally)
+- This `README.md` file
+
+---
+
+## 📥 How to Run
+1. Upload `bank.csv` to your Google Colab session.
+2. Install PySpark in Colab using:
+   ```bash
+   !pip install pyspark
