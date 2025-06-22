@@ -312,3 +312,84 @@ To analyze client data using Apache Spark in order to derive insights about clie
 2. Install PySpark in Colab using:
    ```bash
    !pip install pyspark
+
+
+
+FILE 4 Real Time Machine Learning with Spark Streaming
+
+# 🔄 Real-Time Machine Learning with Spark Streaming
+
+## 📌 Project Overview
+
+This project implements a **real-time streaming application using Apache Spark** to simulate and analyze live bank transaction data. Using the classic `bank.csv` dataset, the goal is to perform **real-time aggregations, predictions, and trend analysis** using Spark Streaming and a machine learning model.
+
+---
+
+## 🗃️ Dataset
+
+- **Source**: UCI Bank Marketing Dataset
+- **File Used**: `bank.csv`
+- **Key Fields**: `age`, `job`, `balance`, `duration`, `y` (subscription status)
+
+---
+
+## ✅ Tasks Completed
+
+### 1️⃣ Stream Processing and Data Aggregation
+- Simulated a streaming data source by chunking `bank.csv`.
+- Ingested data using Spark Structured Streaming.
+- Calculated average balance and transaction duration grouped by job.
+- Real-time results were updated dynamically.
+
+### 2️⃣ Real-Time Model Predictions
+- Trained a **classification model** on historical data to predict `y` (term deposit subscription).
+- Integrated the trained model into the streaming pipeline.
+- Generated predictions in real time as new transaction data arrived.
+
+### 3️⃣ Window Operations and Trend Analysis
+- Used **windowing** to track trends over 10-second and 1-minute intervals.
+- Aggregated transaction count and average balance per window.
+- Analyzed short-term fluctuations and interesting behavioral patterns.
+
+### 4️⃣ Handling Late and Out-of-Order Data
+- Applied **watermarking** to manage late data efficiently.
+- Ensured that the model remains accurate and avoids duplicate counts.
+- Improved the integrity of real-time analysis under streaming conditions.
+
+---
+
+## 🛠️ Technologies Used
+
+- Apache Spark (Structured Streaming)
+- PySpark
+- Pandas & Scikit-learn
+- Google Colab (Python environment)
+- CSV for streaming simulation
+- Matplotlib (optional for visualizing trends)
+
+---
+
+## 📸 Screenshots
+
+All code and output screenshots for each question have been captured as per submission requirements.
+
+---
+
+## 📄 Submission Contents
+
+- `README.md` (this file)
+- DOC file containing:
+  - Each question with full explanation
+  - Code used for every task
+  - Screenshots of code + outputs
+- Python scripts (if applicable)
+- bank.csv and streaming chunks (optional)
+
+---
+
+---
+
+## 📝 License
+
+This project is for educational purposes only and follows the academic integrity guidelines of the course.
+
