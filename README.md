@@ -1,4 +1,4 @@
-FILE 1
+**FILE 1**
 
 # Distributed-Machine-Learning
 
@@ -86,7 +86,7 @@ The dataset includes the following features:
 
 
 
-#🚀 2ND FILE: MACHINE LEARNING WITH SPARK ML
+#🚀 **2ND FILE: MACHINE LEARNING WITH SPARK ML**
       
 
 
@@ -215,7 +215,7 @@ This Spark ML project successfully demonstrates how distributed machine learning
 ---
 
 
-FILE 3 SPARK Data Processing
+**FILE 3 SPARK Data Processing**
 
 
 # 💳 Spark Data Processing Project – Bank Client Analysis
@@ -315,7 +315,7 @@ To analyze client data using Apache Spark in order to derive insights about clie
 
 
 
-FILE 4 Real Time Machine Learning with Spark Streaming
+**FILE 4 Real Time Machine Learning with Spark Streaming**
 
 # 🔄 Real-Time Machine Learning with Spark Streaming
 
