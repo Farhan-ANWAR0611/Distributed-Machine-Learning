@@ -393,3 +393,86 @@ All code and output screenshots for each question have been captured as per subm
 
 This project is for educational purposes only and follows the academic integrity guidelines of the course.
 
+
+FILE 5 
+
+# 💼 Banking Data Analysis using Pandas (Adapted from Hadoop + Hive Project)
+
+## 📌 Objective
+This project was originally designed for Hadoop and Hive, but I implemented it using **Pandas in Google Colab** to make the analysis faster, cleaner, and more reproducible. The goal was to extract meaningful insights from a banking dataset related to client demographics, loan status, account balances, and term deposit subscriptions.
+
+---
+
+## 🗂️ Dataset
+- File: `bank.csv`
+- Source: UCI Bank Marketing Dataset
+- Contains: Client attributes like age, job, marital status, education, balance, contact info, and campaign responses.
+
+---
+
+## ✅ Questions Answered
+
+| Q.No | Question |
+|------|----------|
+| 1 | Load and inspect banking data |
+| 2 | Average account balance per job type |
+| 3 | Count of clients with/without housing loan per education level |
+| 4 | Number of clients contacted each month and their subscription status |
+| 5 | Average contact duration per campaign outcome |
+| 6 | Relationship between age and balance (summary) |
+| 7 | Create a Hive-like DataFrame in Pandas |
+| 8 | Count total number of clients |
+| 9 | Display first 10 records |
+| 10 | Top 10 clients with highest balance |
+| 11 | Average age of clients by job |
+| 12 | Number of clients who defaulted by education level |
+| 13 | Top 5 jobs with highest balance + subscription rate |
+| 14 | Month with highest contacts and campaign success rate |
+| 15 | Correlation between age and balance |
+| 16 | Monthly trend in number of clients contacted |
+| 17 | Anomaly detection in average balance by education level |
+| 18 | Impact of previous campaign outcome on subscription rate and duration |
+
+---
+
+## 🛠️ Technologies Used
+- Google Colab (Python 3)
+- Pandas
+- Matplotlib (for optional visualization)
+- CSV file handling
+
+---
+
+## 📈 Key Insights
+- **Retired and management clients** had higher average balances.
+- **May** had the most client contacts.
+- Previous **successful campaigns** dramatically increased subscription rates.
+- No strong correlation between age and account balance.
+
+---
+
+## 📁 How to Run
+1. Open `Google Colab`.
+2. Upload `bank.csv`.
+3. Run each code block in sequence (questions 1 to 18).
+4. Review outputs and document insights as needed.
+
+---
+
+## 📸 Screenshots & Reporting
+- I have documented each question with code, output, and a short explanation for submission in Google Docs/PDF format.
+
+---
+
+## 📤 Submission Info
+- Project delivered in Jupyter/Colab notebook format.
+- Screenshots of code + output for each question pasted into Google Docs.
+- README.md and `.ipynb` file uploaded along with the report.
+
+---
+
+## 🙋‍♂️ Author
+- **Name:** Md Farhan Anwar
+- **Project:** Hadoop + Hive Banking Project (Pandas Adaptation)
+- **Date:** June 2025
+
